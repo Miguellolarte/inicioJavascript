@@ -70,3 +70,31 @@ if(true){
 
 }
 console.log("Cantidad fuera del id",cantidad);
+/* Constantes 
+const edad;
+edad=15;
+console.log("Edad const",edad)
+edad=35;
+console.log("Constantes edad",edad);
+*/
+
+/* Concatenacion de variables */
+
+var Anio=2018;
+var promedio="25";
+console.log("La concatenacion de "+Anio+" y "+promedio+" es " ,Anio+Number(promedio));
+
+let numero1=25;
+let numero2=40;
+console.log("la concatenacion de ",String(numero1)+String(numero2));
+
+
+/* Ventanas */ 
+/** alerta */
+alert("la concatenacion de "+String(numero1)+String(numero2));
+/**prompt */
+var modelo= prompt("El modelo del carro es",2018);
+/** Cont */
+var Cont=confirm("Desea salir de la aplicacion")
+console.log("Confirmacion",Cont);
+
