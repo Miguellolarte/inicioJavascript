@@ -90,41 +90,96 @@ else{
     alert("es impar");
 }
 */
-var count=0;
-var name=prompt("imgrese el nombre de usuario");
-var passworld=parseInt(prompt("Ingrese la contraseña"));
-while(name){
-    name="dahiana";
-    alert("usuario incorecto");
-    name=prompt("imgrese el nombre de usuario");
-    count>=123456;
-    
-}
-alert("usuarrio bloqueado");
-
-
-
-
 
 
 
 
 
 /*
-switch(nombre){
-    case "dahiana":
-    break;
-    case "miguel":
-    break;
-    default:
-    alert("Usuario Incorrecto");
 
-    
+
+var password="123456";
+var user="dayana";
+var name=prompt("ingrese su usuario");
+var pass=prompt("ingrese su contraseña");
+var count=0;
+function loginuser(name,pass){
+while (name!=user && pass!=password) {
+        alert("La informacion que ingreso es incorecta");
+        var name=prompt("ingrese su usuario");
+        var pass=prompt("ingrese su contraseña");
+        count++;
+        if (count>=5) {
+            alert("su usuario da sido bloqueado");
+            break;
+        }
+
+
 }
+}
+loginuser(name,pass);
+if(count>=5){
+    var conf=confirm("desea cambiar su contraseña");
+if(conf==true){
+    var name=prompt("ingrese su usuario");
+    var pass2=prompt("Ingese nueva contraseña");
+    password=pass2;
+    loginuser(name,pass2);
+}
+}
+
+
+
 */
 
-/* for (let index = 0; index <=5
-        ; index++) {
-       if(isNaN(contraseña)){
-        alert("contraseña incorrecta");
- */
+
+/*
+
+var number1;
+var number2;
+number2=0;
+number1=parseInt(prompt("Ingrese el priemr numero"));
+
+for(number2=0; number2<=10; number2++){
+    if (numero2%1===0){
+        document.write("<br>"+number1+" * "+number2+" = "+(number1*number2));
+    } {
+        
+    }
+}
+
+*/
+var num;
+var i;
+var num2;
+num=parseInt(prompt("Priemr numero"));
+num2=parseInt(prompt("Ingrese hasta que tabla quiere llegar"));
+for (let index = 0; index <num2; index++) {
+    
+    for(i=1 ; i<=10 ; i++){
+        mul=num*i;
+        document.write(num," X ",i," = ",mul,"<br>")    
+       
+}
+
+}
+
+
+
+
+/*
+
+var numero1;
+var numero2;
+number1=parseInt(prompt("ingrese un numero"));
+number2=parseInt(prompt("ingrese el segundo numero"));
+var y=number2;
+var x=number1;
+document.write("<h1>el resultado del numero que ingreso es </h1>");
+for(x=1; x<= 0; x++){
+    for(y=1; y<=0; y++){
+        tabel=y*x; 
+document.write("<h2> el numero"+x+" Multiplicado por"+y+" es igual a "+table+"\n");
+    }
+}
+*/
